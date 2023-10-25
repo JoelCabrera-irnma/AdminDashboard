@@ -1,12 +1,141 @@
-div{
-    background-color: rgb(217, 124, 124);
-}
+
+/* div{
+    background-color: rgb(134, 196, 122);
+} */
 img{
     width: 1.5rem;
 }
 
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.head{
+    border: 1px solid red;
+    grid-column: 2;
+    padding: 10px 30px;
+}
+/* .row2 *{border: 1px solid greenyellow;
+    } */
+.row1{
+    display: grid;
+    grid-template-columns: auto 1.5fr 1fr 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+}
+.row1-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    align-items: center;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.row2-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.heroUser img{
+    width: 2.5rem;
+}
+.sidebar{
+    grid-column: 1;
+    grid-row: 1/3;
+    
+    display: grid;
+    align-content: start;
+    gap: 60px;
+}
+.sideElements1,.sideElements2{
+    display: grid;
+}
+.main{
+    grid-column: 2;
+}
 
 
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.port, .anuncios, .redes{border: 1px solid green;}
+
+.port{
+    background-color: rgb(234, 234, 234);
+    padding: 1rem;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.port *, .square{border: 0.1rem solid red;}
+.titlePort{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.anuncios{
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+}
+.redes{
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: auto repeat(4, 1fr);
+}
+
+.square{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid green;
+    border-left: 1rem solid black;
+    -webkit-box-shadow: 4px 6px 8px 0px #000000; 
+    box-shadow: 2px 2px 8px 0px #3e3d3d;
+
+    display: grid;
+    grid-template-rows: auto 2fr 1fr;
+}
+h3{
+    margin: 0;
+}
+h5{
+    margin: 10px 0;
+}
+.square p {
+    margin: 0;
+}
+.icoPort{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+input{
+    height: 1.5rem;
+}
+
+.row1>p{
+    margin: 0;
+}
+
+.row2-left p{
+    font-size: 0.8rem;
+    margin: 2px;
+}
 /* .red1 *{
     border: 1px dotted green;
 }
