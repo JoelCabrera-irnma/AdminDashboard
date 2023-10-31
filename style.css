@@ -1,6 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,100&display=swap');
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 img{
     width: 1.5rem;
@@ -75,17 +76,20 @@ a{
     border-radius: 10px;
     padding: 5px 10px;
     border-style: none;
+    transition: transform 0.3s;
 }
 button:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
+
 
 /*SIDE BAR*/
 
 .sidebar{
     background-color: #324c51;
     
-    padding: 20px 25px;
+    padding: 20px 25px 20px 35px;
     grid-column: 1;
     grid-row: 1/3;
     
@@ -98,6 +102,11 @@ button:hover{
     display: flex;
     align-items: center;
     color: #f3f2ed;
+    transition: transform 0.3s;
+}
+
+.sidebar a:hover{
+    transform: scale(1.1);
 }
 .sidebar img{
     padding-right: 10px;
@@ -143,7 +152,7 @@ button:hover{
     display: grid;
     padding-top: 1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
 .square{
@@ -164,6 +173,7 @@ button:hover{
 
 .square:hover{
     cursor: pointer;
+    background-color: #ebc591;
 }
 .icoPort{
     display: flex;
@@ -251,8 +261,14 @@ h3{
 }
 h5{
     margin: 10px 0;
+    
 }
 
+.square h5{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-style: roboto;
+}
 
 input{
     height: 1.5rem;
